@@ -1228,9 +1228,9 @@
             <div class="delivery-charge-details">
                 <div class="charge-item">
                     <span class="charge-label">Home Delivery Charge:</span>
-                    <span class="charge-amount">₹400</span>
+                    <span class="charge-amount">₹40</span>
                 </div>
-                <p class="charge-note">Note: ₹400 delivery charge applies for home delivery orders only. Dine-in orders have no additional charges.</p>
+                <p class="charge-note">Note: ₹40 delivery charge applies for home delivery orders only. Dine-in orders have no additional charges.</p>
             </div>
         </div>
 
@@ -1754,7 +1754,7 @@
                 let showDeliveryCharge = false;
                 
                 if (deliveryType === 'home' && totalAmount > 0) {
-                    deliveryCharge = 400;
+                    deliveryCharge = 40;
                     showDeliveryCharge = true;
                     totalAmount += deliveryCharge;
                     
@@ -1763,7 +1763,7 @@
                 <div class="cart-item" style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 15px;">
                     <div class="item-info">
                         <div class="item-name">Home Delivery Charge</div>
-                        <div class="item-price" style="color: #ffffff;">₹400</div>
+                        <div class="item-price" style="color: #ffffff;">₹40</div>
                     </div>
                     <div class="item-quantity">
                         <span style="color: var(--muted); font-size: 14px;">Extra</span>
@@ -1779,7 +1779,7 @@
                 if (showDeliveryCharge) {
                     document.querySelector('.cart-total').innerHTML = `
                     <span>
-                        Total (including ₹400 delivery charge):
+                        Total (including ₹40 delivery charge):
                     </span>
                     <span class="total-amount">₹${totalAmount}</span>
                 `;
@@ -1869,7 +1869,7 @@
             // Add delivery charge if home delivery
             if (deliveryType === 'home') {
                 message += `• Home Delivery Charge - 1 x ₹40\n`;
-                totalAmount += 400;
+                totalAmount += 40;
             }
 
             message += `\n**Total Amount:** ₹${totalAmount}\n\n`;
@@ -1977,3 +1977,4 @@
 </body>
 
 </html>
+
